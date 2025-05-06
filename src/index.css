@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ya to har ek component ke liye css file bna ke usme code likho ya phir tailwind ka use karo ya phir 
+parent file me i.e index.css me sara code likh do aur classname ka use krke sari prop children apply ho jayegi  */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 3rem;
+    margin: 6vh;
+    border: 7px dashed rgb(1, 17, 160);
+    border-radius: 20px;
+    padding: 1vh 5vw;
+}
+
+.cards {
+    display: flex;
+    /* align-items: center; */  /* read more pe click kiya to right wali bhi upr-niche ho rhi thi islliye isko hta diya */
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 400px;
+    height: max-content;
+    margin: 1rem;
+    padding : 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    
+}
+
+.image{
+    width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tour-info{
+    margin: 20px 5px;
+}
+
+.tour-price{
+    color: #1faa59;
+    font-size: 1.3rem;
+}
+
+.tour-name{
+    font-size: 1.5rem;
+}
+
+.read-more{
+    color: #12b8c8;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn-red{
+    text-align: center;
+    color: white;
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid #b4161b;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background: #b4161b21;
+    transition: all 0.5ms;
+    color: black;
+}
+
+.btn-red:hover{
+    background-color: red;
+    color: white;
+    transition: all 2ms;
+}
+
+.refresh{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
